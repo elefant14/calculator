@@ -1,22 +1,19 @@
-package com.calculator.calculator;
 
 
-import org.jetbrains.annotations.Contract;
+import java.util.Scanner;
+class Calculator {
+    public static void main(String[] args) {
+    int a, b, sum, subtract;
+    Scanner give = new Scanner(System.in);
 
-public class CalculatorApplication {
-
-	@Contract(pure = true)
-	public static int main(String[] args) {
-		public int addAToB(int a, int b){
-			int i = a + b;
-			return i;
-
-		}
-		public int subtractAFromB(int a, int b){
-			int n = a - b;
-			return n;
-		}
-
-	}
+    System.out.println("Write a number");
+    a = give.nextInt();
+    System.out.println("Write a second number");
+    b= give.nextInt();
+    sum = a+b;
+    System.out.println("a+b=" + sum);
+    subtract = a-b;
+    System.out.println("a-b="+ subtract);
+    }
 
 }
